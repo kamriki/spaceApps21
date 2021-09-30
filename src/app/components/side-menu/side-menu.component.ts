@@ -19,11 +19,11 @@ export class SideMenuComponent implements OnInit {
   {
     this.navigate =
     [
-      { title: 'Home', url: '/home', icon: 'home' },
-      { title: 'Trainings', url: '/trainings', icon: 'library'}
-      // { title: "New Order", url: "/new-request", icon: "duplicate" },
-      // { title: "Shoppers", url: "/shoppers", icon: "people-sharp" },
-      // { title: "Profile", url: "/profile", icon: "person-circle" },
+      { title: 'The Sun', url: '/sun' },
+      { title: 'Sun Exploring Vehicles', url: '#' },
+      { title: 'Heliophysies', url: '#' },
+      { title: 'Next Solar Cycle', url: '#' },
+      { title: 'Future Sun Mission Probe', url: '#' }
     ];
   }
 
