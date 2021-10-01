@@ -1,7 +1,7 @@
 <app-header title="HelioPhysics"></app-header>
 
 <ion-content class="heliophysics">
-  <div>
+  <div class="section ion-text-center">
     Explore Sun Images taken by Cassini spacecraft<br>
     from Feb 2004 to Sep 2017
   </div>
@@ -11,8 +11,16 @@
         <ion-row>
           <ion-col>
             <ion-img [src]="image.thumb"></ion-img>
+            {{image.observe_date | date: 'dd MMM yyyy hh:mm:ss'}}
           </ion-col>
         </ion-row>
+      </ion-col>
+    </ion-slide>
+    <ion-slide *ngIf="hasMore">
+      <ion-col>
+        <ion-card class="btn-load-more" button (click)="loadMore()">
+          <ion-card-content>Load more</ion-card-content>
+        </ion-card>
       </ion-col>
     </ion-slide>
   </ion-slides>

@@ -38,11 +38,16 @@ $color-numbers: #32c9dd;
 }
 
 .heliophysics {
+  .section { color: $color-numbers; }
   ion-slides {
     background-color: var(--ion-color-step-150);
     ion-slide { width: 8em; }
   }
-
+  .btn-load-more {
+    height: 5rem; background-color: var(--ion-color-step-400);
+    ion-card { margin-top: 1.5rem; }
+    ion-card-content { color: $color-numbers; margin-top: 0.8rem; font-size: 1.1rem; }
+  }
 }
 
 .missions {
