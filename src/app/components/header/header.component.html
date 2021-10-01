@@ -4,7 +4,9 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <!-- <ion-button class="copyright">&#169; ESRI</ion-button> -->
+      <ion-button *ngIf="copyright" class="copyright" (click)="openWebpage(copyright.url)">
+        &#169; {{copyright.name}}
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

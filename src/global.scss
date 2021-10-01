@@ -36,12 +36,20 @@ $color-numbers: #32c9dd;
   .copyright { font-size: 1.5em; color: $color-numbers; }
 }
 
-// .homeBg::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   left: 0;
-//   height: 46vh;
-//   bottom: 0;
-// }
+.missions {
+  ion-img {
+    width: fit-content; height: auto;
+    padding: 1em;
+    margin-top: 5em;
+  }
+}
+
+.homeBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 46vh;
+  bottom: 0;
+}
