@@ -38,6 +38,12 @@ $color-numbers: #32c9dd;
 }
 
 .heliophysics {
+  .spin {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+ }
   .section { color: $color-numbers; }
   ion-slides {
     background-color: var(--ion-color-step-150);

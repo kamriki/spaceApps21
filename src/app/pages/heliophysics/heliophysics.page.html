@@ -5,34 +5,28 @@
     Explore Sun Images taken by Cassini spacecraft<br>
     from Feb 2004 to Sep 2017
   </div>
-  <ion-slides class="row-images" [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
-    <ion-slide *ngFor="let image of rowImages">
-      <ion-col>
-        <ion-row>
-          <ion-col>
-            <ion-img [src]="image.thumb"></ion-img>
-            {{image.observe_date | date: 'dd MMM yyyy hh:mm:ss'}}
-          </ion-col>
-        </ion-row>
-      </ion-col>
-    </ion-slide>
-    <ion-slide *ngIf="hasMore">
-      <ion-col>
-        <ion-card class="btn-load-more" button (click)="loadMore()">
-          <ion-card-content>Load more</ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-slide>
-  </ion-slides>
-  <!-- <ion-grid >
-    <ion-row>
-      <ion-col>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="4" *ngFor="let image of rowImages">
-        <ion-img [src]="image"></ion-img>
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
+  <div class="spin" *ngIf="isLoading else showImages">
+    <ion-spinner  name="crescent" color="primary"></ion-spinner>
+  </div>
+  <ng-template #showImages>
+    <ion-slides class="row-images" [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+      <ion-slide *ngFor="let image of rowImages">
+        <ion-col>
+          <ion-row>
+            <ion-col>
+              <ion-img [src]="image.thumb"></ion-img>
+              {{image.observe_date | date: 'dd MMM yyyy hh:mm:ss'}}
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-slide>
+      <ion-slide *ngIf="hasMore">
+        <ion-col>
+          <ion-card class="btn-load-more" button (click)="loadMore()">
+            <ion-card-content>Load more</ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </ng-template>
 </ion-content>

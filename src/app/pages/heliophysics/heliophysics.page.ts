@@ -8,6 +8,7 @@ import { RowImages } from 'src/app/common/types';
   styleUrls: ['./heliophysics.page.scss'],
 })
 export class HeliophysicsPage implements OnInit {
+  public isLoading = true;
   public rowImages: any[] = []; // RowImages['items'][] = [];
   public hasMore = false;
   private page = 0;
@@ -27,6 +28,7 @@ export class HeliophysicsPage implements OnInit {
   ngOnInit() {}
 
   /**
+   * stop loading spinner
    * ensure loaded images not exceeding total
    */
   loadMore() {
@@ -34,6 +36,7 @@ export class HeliophysicsPage implements OnInit {
       this.page = this.page + 1;
       this.sunSrvc.getRowImages(this.page).subscribe(data => {
         if(data) {
+          this.isLoading = false;
           this.totalPages = data.total;
           this.hasMore = data.more;
           // this.rowImages.push(data.items);
