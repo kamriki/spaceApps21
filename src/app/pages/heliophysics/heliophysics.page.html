@@ -1,5 +1,30 @@
-<app-header title="HELIOPHYSICS"></app-header>
+<app-header title="HelioPhysics"></app-header>
 
-<ion-content>
-
+<ion-content class="heliophysics">
+  <div>
+    Explore Sun Images taken by Cassini spacecraft<br>
+    from Feb 2004 to Sep 2017
+  </div>
+  <ion-slides class="row-images" [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }">
+    <ion-slide *ngFor="let image of rowImages">
+      <ion-col>
+        <ion-row>
+          <ion-col>
+            <ion-img [src]="image.thumb"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-slide>
+  </ion-slides>
+  <!-- <ion-grid >
+    <ion-row>
+      <ion-col>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" *ngFor="let image of rowImages">
+        <ion-img [src]="image"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
 </ion-content>
