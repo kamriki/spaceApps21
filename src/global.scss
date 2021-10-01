@@ -36,20 +36,62 @@ $color-numbers: #32c9dd;
   .copyright { font-size: 1.5em; color: $color-numbers; }
 }
 
+.home {
+  // .video {
+  //   position: fixed;
+  //   top: 50%;
+  //   left: 50%;
+  //   min-width: 100%;
+  //   min-height: 100%;
+  //   width: auto;
+  //   height: auto;
+  //   z-index: -100;
+  //   transform: translateX(-50%) translateY(-50%);
+  // }
+  // .page-centered-element {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom: 0;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  // .content { text-align: center; }
+
+  #container {
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65%;
+    transform: translateY(-50%);
+  }
+
+  #container strong { font-size: 20px; line-height: 26px; }
+  #container p { font-size: 16px; line-height: 22px; color: #8c8c8c; margin: 0; }
+  #container a { text-decoration: none; }
+  .video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: contain !important;
+  }
+}
+
 .missions {
   ion-img {
     width: fit-content; height: auto;
     padding: 1em;
     margin-top: 5em;
   }
-}
-
-.homeBg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 46vh;
-  bottom: 0;
 }
