@@ -1,3 +1,4 @@
+import { SunService } from './../../services/sun.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeliophysicsPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private sunSrvc: SunService
+  ) { }
 
   ngOnInit() {
+    this.sunSrvc.getRowImages(1).subscribe(console.log);
   }
 
 }

@@ -21,10 +21,9 @@ export class SideMenuComponent implements OnInit {
     [
       { title: '', url: '' },
       { title: 'The Sun', url: '/sun' },
-      { title: 'Sun-Exploring Vehicle', url: '/vehicle' },
-      { title: 'HELIOPHYSICS', url: '/heliophysics' },
-      // { title: 'Next Solar Cycle', url: '#' },
-      { title: 'Future missions', url: '/missions' }
+      { title: 'HelioPhysics', url: '/heliophysics' },
+      { title: 'Next Solar Cycle', url: '/cycle' },
+      { title: 'Future Missions', url: '/missions' }
     ];
   }
 
