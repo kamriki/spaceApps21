@@ -1,24 +1,8 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
-
-/* Core CSS required for Ionic components to work properly */
 @import "~@ionic/angular/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
 @import '~@ionic/angular/css/display.css';
-
-/* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
 @import "~@ionic/angular/css/float-elements.css";
 @import "~@ionic/angular/css/text-alignment.css";
@@ -27,6 +11,10 @@
 
 // ion-card { --ion-item-background: #ffffff; }
 // ion-content { --background: whitesmoke; }
+
+:root video[poster] {
+  object-fit: contain;
+}
 
 ion-menu { --width: 50vw; }
 
@@ -37,30 +25,6 @@ $color-numbers: #32c9dd;
 }
 
 .home {
-  // .video {
-  //   position: fixed;
-  //   top: 50%;
-  //   left: 50%;
-  //   min-width: 100%;
-  //   min-height: 100%;
-  //   width: auto;
-  //   height: auto;
-  //   z-index: -100;
-  //   transform: translateX(-50%) translateY(-50%);
-  // }
-  // .page-centered-element {
-  //   position: absolute;
-  //   left: 0;
-  //   right: 0;
-  //   top: 0;
-  //   bottom: 0;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
-  // .content { text-align: center; }
-
   #container {
     text-align: center;
 
@@ -74,18 +38,8 @@ $color-numbers: #32c9dd;
   #container strong { font-size: 20px; line-height: 26px; }
   #container p { font-size: 16px; line-height: 22px; color: #8c8c8c; margin: 0; }
   #container a { text-decoration: none; }
-  .video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    transform: translateX(-50%) translateY(-50%);
-    object-fit: contain !important;
-  }
+
+  .video { object-fit: cover !important; }
 }
 
 .missions {
