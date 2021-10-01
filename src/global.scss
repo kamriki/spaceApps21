@@ -30,6 +30,12 @@
 
 ion-menu { --width: 50vw; }
 
+$color-numbers: #32c9dd;
+
+.header {
+  .copyright { font-size: 1.5em; color: $color-numbers; }
+}
+
 // .homeBg::before {
 //   content: "";
 //   position: absolute;
