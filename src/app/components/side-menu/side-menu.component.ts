@@ -20,10 +20,10 @@ export class SideMenuComponent implements OnInit {
     this.navigate =
     [
       { title: 'The Sun', url: '/sun' },
-      { title: 'Sun Exploring Vehicles', url: '#' },
-      { title: 'Heliophysies', url: '#' },
-      { title: 'Next Solar Cycle', url: '#' },
-      { title: 'Future Sun Mission Probe', url: '#' }
+      { title: 'Sun-Exploring Vehicle', url: '/vehicle' },
+      { title: 'HELIOPHYSICS', url: '/heliophysics' },
+      // { title: 'Next Solar Cycle', url: '#' },
+      { title: 'Future missions', url: '/missions' }
     ];
   }
 
