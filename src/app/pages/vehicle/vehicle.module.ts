@@ -1,3 +1,4 @@
+import { SharedModule } from './../../common/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,7 @@ import { VehiclePage } from './vehicle.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    VehiclePageRoutingModule
+    VehiclePageRoutingModule, SharedModule
   ],
   declarations: [VehiclePage]
 })

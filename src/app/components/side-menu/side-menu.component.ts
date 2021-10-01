@@ -19,6 +19,7 @@ export class SideMenuComponent implements OnInit {
   {
     this.navigate =
     [
+      { title: '', url: '' },
       { title: 'The Sun', url: '/sun' },
       { title: 'Sun-Exploring Vehicle', url: '/vehicle' },
       { title: 'HELIOPHYSICS', url: '/heliophysics' },

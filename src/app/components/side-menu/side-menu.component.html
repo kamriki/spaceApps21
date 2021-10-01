@@ -4,11 +4,11 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <ion-list *ngFor="let pages of navigate">
+    <ion-list *ngFor="let page of navigate">
     <ion-menu-toggle auto-hide="true">
-      <ion-item [routerLink]="pages.url" routerDirection="forward" lines="none">
-          <!-- <ion-icon [name]="pages.icon" slot="start"></ion-icon> -->
-          {{pages.title}}
+      <ion-item [routerLink]="page.url" routerDirection="forward" lines="none">
+          <ion-icon *ngIf="page.title === ''" name="home" slot="start" color="primary"></ion-icon>
+          {{page.title}}
       </ion-item>
     </ion-menu-toggle>
     </ion-list>
