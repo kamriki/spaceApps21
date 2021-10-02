@@ -1,5 +1,48 @@
 <app-header title="The Sun" [copyright]="copyright"></app-header>
 
-<ion-content>
-
+<ion-content class="sun">
+  <ion-grid>
+    <ion-row class="row-top">
+      <ion-col size="5"></ion-col>
+      <ion-col>
+        <ion-card class="mt-6" button (click)="openWebpage('solar-orbiter')">
+          <ion-card-header>Solar<br>Orbiter</ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+    <ion-row class="row-middle">
+      <ion-col size="3" size-md="1">
+        <ion-col>
+          <ion-card button (click)="openWebpage('parker')">
+            <ion-card-header>Parker Solar Probe</ion-card-header>
+          </ion-card>
+          <ion-img class="parker" src="assets/images/parker.png" button (click)="openWebpage('parker')"></ion-img>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-col>
+      <ion-col>
+        <ion-img class="img-sun" src="assets/images/sun.png" button (click)="openWebpage('sun')"></ion-img>
+      </ion-col>
+      <ion-col size="3" size-md="1">
+        <ion-row class="h-7"></ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-card button (click)="openWebpage('solar-winds')">
+              <ion-card-header>Solar Winds</ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row-bottom">
+      <ion-col size="5"></ion-col>
+      <ion-col>
+        <ion-card button (click)="openWebpage('black-spots')">
+          <ion-card-header>Black Spots</ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

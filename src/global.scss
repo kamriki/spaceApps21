@@ -15,6 +15,9 @@ ion-menu { --width: 10rem; }
 
 $color-numbers: #32c9dd;
 
+.h-7 { height: 7rem; }
+.mt-6 { margin-top: 6rem; }
+
 .header {
   .copyright { font-size: 1.5em; color: $color-numbers; }
 }
@@ -35,6 +38,18 @@ $color-numbers: #32c9dd;
   #container a { text-decoration: none; }
 
   .video { object-fit: cover !important; }
+}
+
+.sun {
+  ion-grid {
+    background-color: #000; height: 100%;
+    ion-col { padding: 0; }
+  }
+  .row-top,.row-bottom { height: 10rem; }
+  .row-middle { height: 16rem; }
+  ion-card-header { padding: 0.5rem; text-align: center; color: $color-numbers; }
+  .img-sun { height: 20rem; width: auto; }
+  // .img-parker {}
 }
 
 .heliophysics {
