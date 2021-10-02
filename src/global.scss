@@ -44,7 +44,7 @@ $color-numbers: #32c9dd;
     transform: translateX(-50%);
     margin-top: 1rem;
  }
-  .section { color: $color-numbers; }
+  .section { margin-top: 5rem; color: $color-numbers; }
   ion-slides {
     background-color: var(--ion-color-step-150);
     ion-slide { width: 8em; }

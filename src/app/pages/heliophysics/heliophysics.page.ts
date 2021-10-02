@@ -1,6 +1,6 @@
 import { SunService } from './../../services/sun.service';
 import { Component, OnInit } from '@angular/core';
-import { RowImages } from 'src/app/common/types';
+import { Copyright, RowImages } from 'src/app/common/types';
 
 @Component({
   selector: 'app-heliophysics',
@@ -8,6 +8,10 @@ import { RowImages } from 'src/app/common/types';
   styleUrls: ['./heliophysics.page.scss'],
 })
 export class HeliophysicsPage implements OnInit {
+  public copyright: Copyright = {
+    name: 'NASA', url: 'https://solarsystem.nasa.gov'
+  };
+
   public isLoading = true;
   public rowImages: any[] = []; // RowImages['items'][] = [];
   public hasMore = false;
