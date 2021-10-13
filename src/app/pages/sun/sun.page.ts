@@ -20,7 +20,7 @@ export class SunPage implements OnInit {
   openWebpage(page: string) {
     let url = '';
     switch(page) {
-      case 'black-spots': url = 'https://solarsystem.nasa.gov/solar-system/sun/overview/'; break;
+      case 'black-spots': url = 'https://www.syfy.com/syfywire/theres-a-big-black-spot-on-the-sun-today-and-scientists-predicted-it'; break;
       case 'parker': url = 'https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Teamwork_with_Parker_Solar_Probe'; break;
       case 'solar-winds': url = 'https://www.jpl.nasa.gov/nmp/st5/SCIENCE/solarwind.html'; break;
       case 'solar-orbiter': url = 'https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter'; break;
